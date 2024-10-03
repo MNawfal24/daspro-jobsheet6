@@ -6,7 +6,11 @@ public class Pemilihan2Percobaan1_19{
     System.out.println(" Masukkan Tahun : ");
     tahun = sc19.nextInt();
     if ((tahun % 4) == 0){
-        if((tahun % 100) !=0){System.out.println("Tahun Kabisat");}
+        if((tahun % 100) !=0){
+            System.out.println("Tahun Kabisat");
+        } else{
+        System.out.println("bukan tahun kabisat");
+    }
         
     }else{
         System.out.println("Bukan tahun kabisat");
