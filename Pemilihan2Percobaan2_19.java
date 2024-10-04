@@ -23,7 +23,7 @@ public class Pemilihan2Percobaan2_19 {
         caraMembayar = sc19.nextLine();
         System.out.println("--------------------------------------");
 
-        if (member.equalsIgnoreCase("y")) {
+        if (member.equals("y")) {
             diskon = 0.10;
             System.out.println("Besar Diskon = 10%");
             if (pilihan_menu == 1) {
@@ -45,11 +45,11 @@ public class Pemilihan2Percobaan2_19 {
             totalHarga = harga - (harga * diskon);
             System.out.println("Total Harga Setelah Diskon = " + totalHarga);
 
-            if (caraMembayar.equalsIgnoreCase("QRIS")) {
+            if (caraMembayar.equals("QRIS")) {
                 totalHarga -= potonganQris;
                 System.out.println(" Harga Akhirnya = " + totalHarga);
             }
-            } else if (member.equalsIgnoreCase("n")) {
+            } else if (member.equals("n")) {
                 if (pilihan_menu == 1) {
                     harga = 14000;
                     System.out.println("Harga Rice Bowl = " + harga);
@@ -68,7 +68,7 @@ public class Pemilihan2Percobaan2_19 {
                 }
 
                 System.out.println("Total Harga= " + harga);
-                if (caraMembayar.equalsIgnoreCase("QRIS")) {
+                if (caraMembayar.equals("QRIS")) {
                     harga -= potonganQris;
                     System.out.println(" Harga Akhirnya = " + harga);
                 }
