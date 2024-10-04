@@ -9,6 +9,25 @@ public class Pemilihan2Percobaan3_19{
          kategori = sc19.nextLine();
          System.out.print("Masukkan Besarnya Penghasilan = ");
          penghasilan = sc19.nextInt();
-   
+            if (kategori.equals("pekerja")) {
+                if (penghasilan <= 20000000)
+                pajak = 0.1;
+            else if (penghasilan <= 3000000)
+                pajak = 0.15;
+            else
+                pajak = 0.2;
+            gajiBersih = (int) (penghasilan - (pajak * penghasilan));
+            System.out.print("penghasilan Bersih : " + gajiBersih);
+            } else if (kategori.equals("pebisnis")) {
+                if (penghasilan <= 2500000)
+                pajak = 0.15;
+            else if (penghasilan <= 3500000)
+                pajak = 0.2;
+            else
+                pajak = 0.25;
+            gajiBersih = (int) ( penghasilan - (pajak * penghasilan));
+            System.out.println("penghasil Bersih : " + gajiBersih);
+        } else
+            System.out.println("Masukkan Kategori Dengan Benar");
    }
 }
